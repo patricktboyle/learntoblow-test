@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Beginner Problems</title>
+    <link rel="stylesheet" href="problemstyle.css">
+</head>
+<body class="problem-page-template">
+    <header>
+    </header>
+    <nav class="navbar"> 
+        <div class="nav-logo">
+            <a href="index.html" class="logo">Learn <br> Glassblowing</a>
+        </div>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="problems.html">Glassblowing Solutions</a>
+            <a href="#Shop-Section">Shop</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <main class="all-topics">
+        <div class="topic-section">
+            <video controls>
+                <source src="https://res.cloudinary.com/dkirrobg9/video/upload/v1744663488/Marvering-compressed_vrr5nm.mp4" type="video/mp4">
+                <track src="Subtitles/Marvering-Subtitles.vtt" type="subtitles" srclang="en" label="English"> 
+            </video>  
+            <div class="topic-text">
+                <h2>Marvering</h2>
+                <p>Learn to marver</p>
+            </div>
+        </div>
+        <div class="topic-section">
+            <video controls>
+                <source src="https://res.cloudinary.com/dkirrobg9/video/upload/v1744663480/Rules_And_First_Gather_-_compressed_ruiogd.mp4" type="video/mp4">
+                <track src="Subtitles/Rules-and-First-Gather-Subtitles.vtt" type="subtitles" srclang="en" label="English"> 
+            </video>
+            <div class="topic-text">
+                <h2>Gathering</h2>
+                <p>Rules for acing your first gather</p>
+            </div>
+        </div>
+        <div class="topic-section">
+            <video controls>
+                <source src="https://res.cloudinary.com/dkirrobg9/video/upload/v1744663491/Second_And_Other_Gathers_-_compressed_yj3uao.mp4" type="video/mp4">
+                <track src="Subtitles/Second-and-Other-Gathers.vtt" type="subtitles" srclang="en" label="English"> 
+            </video>
+            <div class="topic-text">
+                <h2>Second Gather</h2>
+                <p>How to collect a second gather plus some other types of gathers</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        const allTopics = document.querySelector('.all-topics');
+        allTopics.style.paddingTop = navbar.offsetHeight + 'px';
+      </script>      
+</body>
+</html>

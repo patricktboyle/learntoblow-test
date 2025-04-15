@@ -54,12 +54,24 @@
   }
 
   .hero-section {
-    background-image: url(https://res.cloudinary.com/dkirrobg9/image/upload/v1744660369/Mckelvey-glassblowing_vy3jxa.png);
     width: 100%;
     height: 45vh;  
     position: relative;
     overflow: hidden;
     margin-bottom: 0;
+  }
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://res.cloudinary.com/dkirrobg9/image/upload/v1744660369/Mckelvey-glassblowing_vy3jxa.png);
+    /* background-size: cover; */
+    background-position: center;
+    filter: blur(4px);
+    z-index: 0;
   }
 
   .hero-content {
@@ -75,8 +87,6 @@
     height: 100%;
     margin: 0 auto;
     margin-left: 15%;
-    /* gap: 2rem; */
-    /* padding: 2rem; */
   }
 
   .all-topics {
@@ -196,3 +206,86 @@
     flex-grow: 1;
     text-align: left;
   }
+
+  footer {
+    background-color: #dededb;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 1rem;
+    }
+  
+    .nav-links a {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+  
+    .hero-section {
+      height: auto;
+      padding: 2rem 1rem;
+    }
+  
+    .hero-content {
+      margin-left: 0;
+      align-items: center;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .topic-section,
+    .topic-section-alt {
+      padding: 2rem 1rem;
+    }
+  
+    .topic-section h2,
+    .alt-video-section-c h2 {
+      font-size: 1.25rem !important;
+    }
+  
+    .video-with-description,
+    .video-with-description-last {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        "b"
+        "c";
+      row-gap: 1rem;
+    }
+  
+    .video-with-description-last {
+      grid-template-areas: 
+        "b"
+        "f";
+    }
+  
+    .topic-section video,
+    .topic-section-alt video {
+      max-width: 90vw;
+      height: auto;
+    }
+  
+    .video-with-description .grid-area-c,
+    .alt-video-section-c,
+    .topic-text-section {
+      padding: 1rem;
+    }
+  
+    .video-with-description p,
+    .alt-video-section-c p {
+      font-size: 1rem;
+    }
+  
+    .topic-text {
+      text-align: center;
+    }
+  }
+  

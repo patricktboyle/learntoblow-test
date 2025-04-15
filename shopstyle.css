@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+    body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #333;
+  }
+
+    .navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: 10;
+    padding: 1.5rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #c2410c;
+    text-decoration: none;
+    line-height: 1;
+  }
+
+  .nav-logo {
+    justify-content: flex-start;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+  
+  .nav-links a {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 5rem;
+    text-decoration: none;
+    color: #504c4cde;
+  }
+  
+  .nav-links a:hover {
+    color: #c2410c;
+  }
+
+  .three-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "a b c";
+    column-gap: 6rem;
+    justify-content: center;
+    align-content: center;
+    max-width: 100vw;
+  }
+
+  .buy-the-video {
+    grid-area: a;
+  }
+
+  .buy-the-book {
+    grid-area: b;
+
+  }
+
+  .buy-book-and-video {
+    grid-area: c;
+  }
+
+footer {
+    background-color: #dededb;
+    text-align: center;
+  }

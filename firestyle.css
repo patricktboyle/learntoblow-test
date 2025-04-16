@@ -58,16 +58,19 @@
     margin-left: 15%;
     /* gap: 2rem; */
     padding: 2rem;
+    
   }
   
   .hero-content h1 {
     font-size: 3rem;
+    text-shadow: .15rem .15rem 4px black;
   }
   
   .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     justify-content: left;
+    text-shadow: .15rem .15rem 4px black;
   }
   
   .hero-button {
@@ -118,6 +121,7 @@
     /* text-align: left; */
     line-height: 1;
     /* margin-left: 15%; */
+    text-shadow: 0 0 20px #9a3412;
   }
 
   .nav-logo {
@@ -137,6 +141,7 @@
     margin: 0 5rem;
     text-decoration: none;
     color: #504c4cde;
+    text-shadow: 0px 0px 20px #504c4cde;
   }
   
   .nav-links a:hover {

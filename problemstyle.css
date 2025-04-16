@@ -108,15 +108,13 @@
     align-items: center;
     gap: 2rem;
     width: 100vw;
-    /* margin-bottom: 4rem; */
     border-radius: 4px;
     padding: 5rem 3rem 5rem 3rem;
     background-color: rgba(157, 228, 243, 0.018);
     box-shadow: 1rem black;
-    /* border: 1px solid #333;     */
   }
   
-  .topic-section h2 {
+  .topic-section h2, .topic-section-alt h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.6vw;
     font-weight: bold;
@@ -125,17 +123,16 @@
 
   .topic-section-alt {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-self: flex-start;
     align-items: center;
     gap: 2rem;
     width: 100vw;
-    /* margin-bottom: 4rem; */
     border-radius: 4px;
     padding: 5rem 3rem 5rem 3rem;
     background-color: rgba(173, 133, 81, 0.295);
     box-shadow: 1rem black;
-    /* border: 1px solid #333; */
   }
 
   .video-with-description {
@@ -149,27 +146,34 @@
     /* column-gap: 5rem; */
   }
 
-  .video-with-description .grid-area-b, .alt-video-section-b {
+  .alt-video-with-description {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "a b c d"
+    "e b c f";
+    align-content: space-between;
+    justify-content: space-evenly;
+    /* column-gap: 5rem; */
+  }
+
+  .video-with-description .grid-area-b, .video-with-description .grid-area-b, .alt-video-with-description .alt-grid-area-b, .alt-video-with-description .alt-grid-area-b {
     grid-area: b;
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
     padding-right: 1rem;
   }
 
-  .video-with-description .grid-area-c, .alt-video-section-c {
+  .video-with-description .grid-area-c, .video-with-description .grid-area-c, .alt-video-with-description .alt-grid-area-c, .alt-video-with-description .alt-grid-area-c {
     grid-area: c;
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
     padding-left: 1rem;
   }
 
-  .video-with-description .grid-area-c {
+  .video-with-description .grid-area-c, .alt-video-with-description .alt-grid-area-b {
     padding-top: 5rem;
   }
 
-  .video-with-description video {
-    grid-area: b;
-  }
-
-  .video-with-description p {
+  .video-with-description p, .alt-video-with-description p {
     grid-area: c;
     font-size: 1.2rem;
   }
@@ -215,31 +219,40 @@
   @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: stretch;
       padding: 1rem;
     }
   
     .nav-links {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-top: 1rem;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
     }
   
     .nav-links a {
       margin: 0.5rem 0;
       font-size: 1rem;
+      margin-top: 1rem;
     }
   
     .hero-section {
-      height: auto;
+      height: 50vh;
       padding: 2rem 1rem;
     }
   
     .hero-content {
       margin-left: 0;
       align-items: center;
-      font-size: 1.5rem;
       text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 1.25rem;
+    }
+
+    .hero-content p {
+      font-size: .75rem;
+      padding-top: .5rem;
     }
   
     .topic-section,
@@ -248,23 +261,24 @@
     }
   
     .topic-section h2,
-    .alt-video-section-c h2 {
+    .topic-section-alt h2 {
       font-size: 1.25rem !important;
     }
   
-    .video-with-description,
-    .video-with-description-last {
+    .video-with-description {
       grid-template-columns: 1fr;
       grid-template-areas: 
         "b"
         "c";
       row-gap: 1rem;
     }
-  
-    .video-with-description-last {
+
+    .alt-video-with-description {
+      grid-template-columns: 1fr;
       grid-template-areas: 
-        "b"
-        "f";
+        "c"
+        "b";
+      row-gap: 1rem;
     }
   
     .topic-section video,
@@ -273,14 +287,16 @@
       height: auto;
     }
   
-    .video-with-description .grid-area-c,
-    .alt-video-section-c,
+    .video-with-description, 
+    .alt-video-with-description, 
+    .grid-area-c,
+    .alt-grid-area-b,
     .topic-text-section {
       padding: 1rem;
     }
   
-    .video-with-description p,
-    .alt-video-section-c p {
+    .video-with-description p, 
+    .alt-video-with-description p {
       font-size: 1rem;
     }
   

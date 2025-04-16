@@ -89,20 +89,6 @@
     background-color: #9a3412;
   }
   
-  /* Responsive - Stack on mobile */
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      text-align: center;
-      height: auto; /* Let it expand naturally on small screens */
-      padding: 2rem 1rem;
-    }
-  
-    .hero-content {
-      max-width: 100%;
-    }
-  }
-  
   .navbar {
     position: absolute;
     top: 0;
@@ -275,28 +261,44 @@
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.55rem;
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: .8rem;
+    padding-top: .5rem;
+  }
+
+  .hero-button {
+    padding: .5rem 1rem;
+    font-size: 8px;
+    letter-spacing: 1px;
   }
 
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 1rem;
   }
 
   .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .nav-links a {
     margin: 0.5rem 0;
     font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .video-clip-section-title {
+    font-size: 1.4rem;
+  }
+
+  .video-clip-section-description {
+    font-size: .8rem;
   }
 
   .video-listing {

@@ -81,3 +81,25 @@ footer {
     background-color: #dededb;
     text-align: center;
   }
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 1rem;
+    }
+  
+    .nav-links {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      
+      /* margin-top: 1rem; */
+    }
+  
+    .nav-links a {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+  }

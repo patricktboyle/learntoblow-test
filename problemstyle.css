@@ -214,6 +214,7 @@
   footer {
     background-color: #dededb;
     text-align: center;
+    font-size: smaller;
   }
 
   @media (max-width: 768px) {
@@ -302,6 +303,10 @@
   
     .topic-text {
       text-align: center;
+    }
+
+    footer {
+      font-size: .5rem;
     }
   }
   

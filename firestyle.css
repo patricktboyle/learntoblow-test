@@ -72,7 +72,7 @@
   
   .hero-button {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1rem 1.25rem;
     background-color: #bd6405;
     color: white;
     font-size: 12px;
@@ -234,10 +234,22 @@
 
   .buy-book-button {
     grid-area: j;
-    padding: 1rem 0 1rem 0;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #bd6405;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* border-radius: 8px; */
+    transition: background-color 0.3s ease;
   }
 
   footer {
+    font-size: smaller;
     background-color: #dededb;
     text-align: center;
   }
@@ -347,5 +359,9 @@
     display: inline-block;
     text-align: center;
     margin-top: 1rem;
+  }
+
+  footer {
+    font-size: .5rem;
   }
 }

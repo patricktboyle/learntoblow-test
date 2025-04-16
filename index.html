@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="firestyle.css">
 </head>
 <body class="home-page-template">
-    <header></header>
     <nav class="navbar"> 
             <div class="nav-logo">
                 <a href="index.html" class="logo">Learn <br> Glassblowing</a>
@@ -26,10 +25,13 @@
         <div class="hero-content">
             <h1>The Art of Fire: Beginning Glassblowing</h1>
             <p>Step-by-step courses from a professional glass artist.</p>
-            <a href="#Video-Clip-Section-Title" class="hero-button" title="Go to Video Clips">Get Started</a>
+            <div style="display:flex;flex-direction:row;">
+                <a href="shop.html" class="hero-button" title="Go to Shop" style="border-right: 2px solid black;">Get the Course</a>
+                <a href="#preview-section" class="hero-button" title="Go to Video Clips">Get the Preview</a>
+            </div>
         </div> 
     </section>
-    <h2 class="video-clip-section-title">A Glimpse into the <i>Art of Fire</i></h2>
+    <h2 class="video-clip-section-title" id="preview-section">A Glimpse into the <i>Art of Fire</i></h2>
     <p class="video-clip-section-description">Take a look at some of the six hours of content guiding you through glassblowing from novice to advanced.</p>
     <section id="Art-of-Fire-Video-Clips" class="video-listing" style="background-color: #dededb;">
             <div class="video-clip">
@@ -60,7 +62,7 @@
             <h2 class="book-listing-title">Grab the Book Glassblowers Use!</h2>
             <p class="book-listing-description">For twenty years, <b><i>The Art of Fire</i></b> has been used by glassblowing enthusiasts and teachers for a thorough and comphrehensible guide to glassblowing.<br><br><b><i>The Art of Fire</i></b> is a hands-on guide to the fundamentals of glassblowing—written for absolute beginners but built to support instructors and students alike. Originally developed as a teaching manual, the book breaks down each essential skill, from gathering and marvering to using jacks and making second gathers, in clear, approachable steps. Whether you're stepping into the hot shop for the first time or leading a class through the basics, <b><i>The Art of Fire</i></b> offers practical techniques, foundational knowledge, and just enough philosophy to remind you why working with molten glass is as rewarding as it is challenging. It’s more than a textbook—it’s a tool for learning through doing.
             </p>
-            <a class="Buy-Book-Button">Buy Book</a>
+            <a class="buy-book-button">Get the Book</a>
         </div>
         <div class="book-image">
             <img src="https://res.cloudinary.com/dkirrobg9/image/upload/v1744660371/the_art_of_fire_cover_bgbzev.jpg" alt="Art of Fire book cover">
@@ -68,7 +70,7 @@
     </section>
     <section id="Shop-Section" title="Section for purchasing the book and video"></section>
 </body>
-<footer style="font-size: smaller;">
+<footer>
     <hr>
     <p>Scipio Development &nbsp &#x2022 &nbsp 7707 Forsyth Blvd</p>
     <hr>

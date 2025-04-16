@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+  }
   
     body {
     font-family: sans-serif;
@@ -55,30 +65,48 @@
 
   .three-options {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "a b c";
-    column-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
     justify-content: center;
-    align-content: center;
+    align-items: top;
     max-width: 100vw;
+    overflow-x: hidden;
   }
 
-  .buy-the-video {
-    grid-area: a;
+  .shop-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .buy-the-book {
-    grid-area: b;
-
+  .shop-option img {
+    height: auto;
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 100%;
+    box-shadow: .2rem .2rem 2rem 0 rgba(0, 0, 0, .4);
   }
 
-  .buy-book-and-video {
-    grid-area: c;
+  .book-cover {
+    max-width: 15vw;
+    height: auto;
   }
+
+  .shop-option h2 {
+    margin-top: 2rem;
+  }
+
+  .shop-option p {
+    margin-top: 1rem;;
+  }
+  
 
 footer {
-    background-color: #dededb;
+    font-size: smaller;
     text-align: center;
   }
 
@@ -101,5 +129,21 @@ footer {
       margin: 0.5rem 0;
       font-size: 1rem;
       margin-top: 1rem;
+    }
+
+    .book-cover {
+      max-width: 50vw;
+    }
+
+    .shop-option h2 {
+      font-size: 1.1rem;
+    }
+
+    .shop-option p {
+      font-size: .75rem;
+    }
+
+    footer {
+      font-size: .5rem;
     }
   }

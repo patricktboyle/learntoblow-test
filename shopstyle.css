@@ -57,6 +57,7 @@
     margin: 0 5rem;
     text-decoration: none;
     color: #504c4cde;
+    text-shadow: 0px 0px 20px #504c4cde;
   }
   
   .nav-links a:hover {
@@ -102,6 +103,21 @@
 
   .shop-option p {
     margin-top: 1rem;;
+  }
+
+  .button-to-square {
+    padding: .75rem 2rem;
+    background-color: #bd6405;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    /* border-radius: 8px; */
+    transition: background-color 0.3s ease;
   }
   
 

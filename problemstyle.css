@@ -47,6 +47,7 @@
     margin: 0 5rem;
     text-decoration: none;
     color: #504c4cde;
+    text-shadow: 0px 0px 20px #504c4cde;
   }
   
   .nav-links a:hover {
@@ -125,7 +126,7 @@
   .topic-section h2, .topic-section-alt h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #c2410c;
-    text-shadow: 0 0 20px #c2410c;
+    /* text-shadow: 0 0 20px #c2410c; */
     font-size: 1.6vw;
     font-weight: bold;
     align-self: left;
